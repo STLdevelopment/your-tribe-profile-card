@@ -39,7 +39,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 50px;
-    padding: 0 30px;
+    padding: 30px;
 }
 
 .main-section .main-left .hero-container .icon-box {
