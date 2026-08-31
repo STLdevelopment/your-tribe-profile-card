@@ -1,59 +1,87 @@
-<!DOCTYPE html>
-<html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FDND Visitekaartje</title>
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
-    
-    <article>
-      
-      <header>
-        
-        <h1>Jane Doe</h1>
-        
-        <p class="slogan"><em>Creatieve Frontend Developer in spé</em></p>
-        
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <title>Wijzig layout</title>
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M15 19v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M15 5v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M5 15h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M5 9h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-        </button>
-        
-      </header>
-  
-      <img src="assets/creative-coder.png" alt="" width="800" height="800">
+<section>
+    <div class="kaartje-wrapper">
+        <div class="top-bar">
+            <img src="">
+            <ul>
+                <li>Webdesign</li>
+                <li>Webdevelopment</li>
+                <li>Data Inzage</li>
+            </ul>
+        </div>
+        <div class="main-section">
+            <div class="main-left">
+                <div class="hero-container">
+                    <div class="icon-box">
+                        <img src="">
+                        <h1>Jouw merk op de voorgrond</h1>
+                    </div>
+                </div>
+                <p>Iedereen die (online) gevonden wilt kunnen worden heeft een website nodig.</p>
+            </div>
+            <div class="main-right">
+                <img class="profile_picture">
+                <p>S.T. Leung</p>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="email">
+                <div class="icon-box">
+                    <img src="">
+                    <p>sun.leung@hva.nl</p>
+                </div>
+            </div>
+            <div class="phone">
+                <div class="icon-box">
+                    <img src="">
+                    <p>06 1234 5678</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-      <dl>
-        <dt>HTML</dt>
-        <dd>🏆🏆🏆</dd>
-        
-        <dt>CSS</dt>
-        <dd>🏆🏆</dd>
-        
-        <dt>JavaScript</dt>
-        <dd>🏆🏆🏆🏆</dd>
-      </dl>
-  
-      <p>Het WEB is te gek! <br> Met HTML, CSS en JS kan ik vette, interactieve web apps maken.</p>
-      
-    </article>
+<style>
+    .kaartje-wrapper {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #FFFDF4;
+        border-radius: 10px;
+    }
 
-    <script src="scripts/script.js"></script>
-    
-  </body>
-</html>
+    .top-bar {
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top-bar ul {
+        list-style-type: none;
+        padding: unset;
+        display: flex;
+    }
+
+    .top-bar li:not(:last-child):after {
+        content: '-';
+        margin: 0 10px;
+    }
+
+    .top-bar, .footer-bar {
+        background-color: black;
+        padding: 10px 30px;
+    }
+
+    :is(.top-bar, .footer-bar) :is(li, p) {
+        color: white;
+    }
+
+    .main-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 0 30px;
+    }
+
+    .footer-bar {
+        border-radius: 0 0 10px 10px;
+    }
+</style>
