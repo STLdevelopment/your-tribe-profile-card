@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url(/assets/Logo_placeholder.svg);
+    background-image: url(STLdevelopment/assets/Logo_placeholder.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
