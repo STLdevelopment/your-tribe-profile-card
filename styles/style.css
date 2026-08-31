@@ -9,9 +9,14 @@
 .top-bar {
     border-radius: 10px 10px 0 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 16px 30px;
     background-color: black;
+}
+
+.top-bar svg {
+    height: 26px;
 }
 
 .top-bar ul {
@@ -33,7 +38,23 @@
 .main-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-column-gap: 50px;
     padding: 0 30px;
+}
+
+.main-section .main-left .hero-container .icon-box {
+    display: flex;
+    gap: 14px;
+}
+
+.main-section .main-left .hero-container h1 {
+    margin: unset;
+}
+
+.main-section .main-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 .footer-bar {
