@@ -10,23 +10,20 @@
     border-radius: 10px 10px 0 0;
     display: flex;
     justify-content: space-between;
+    padding: 10px 30px;
+    background-color: black;
 }
 
 .top-bar ul {
     list-style-type: none;
     padding: unset;
     display: flex;
+    margin: unset;
 }
 
 .top-bar li:not(:last-child):after {
     content: '-';
     margin: 0 10px;
-}
-
-.top-bar,
-.footer-bar {
-    background-color: black;
-    padding: 10px 30px;
 }
 
 :is(.top-bar, .footer-bar) :is(li, p) {
@@ -43,6 +40,8 @@
     display: flex;
     justify-content: space-between;
     border-radius: 0 0 10px 10px;
+    padding: 16px 30px;
+    background-color: black;
 }
 
 .footer-bar :is(.email, .phone) {
@@ -51,6 +50,7 @@
 
 .footer-bar .icon-box {
     display: flex;
+    align-items: center;
     gap: 14px;
 }
 
