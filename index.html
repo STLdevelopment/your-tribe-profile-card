@@ -1,87 +1,52 @@
-<section>
-    <div class="kaartje-wrapper">
-        <div class="top-bar">
-            <img src="">
-            <ul>
-                <li>Webdesign</li>
-                <li>Webdevelopment</li>
-                <li>Data Inzage</li>
-            </ul>
-        </div>
-        <div class="main-section">
-            <div class="main-left">
-                <div class="hero-container">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDND Visitekaartje</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <section>
+        <div class="kaartje-wrapper">
+            <div class="top-bar">
+                <img src="">
+                <ul>
+                    <li>Webdesign</li>
+                    <li>Webdevelopment</li>
+                    <li>Data Inzage</li>
+                </ul>
+            </div>
+            <div class="main-section">
+                <div class="main-left">
+                    <div class="hero-container">
+                        <div class="icon-box">
+                            <img src="">
+                            <h1>Jouw merk op de voorgrond</h1>
+                        </div>
+                    </div>
+                    <p>Iedereen die (online) gevonden wilt kunnen worden heeft een website nodig.</p>
+                </div>
+                <div class="main-right">
+                    <img class="profile_picture">
+                    <p>S.T. Leung</p>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="email">
                     <div class="icon-box">
                         <img src="">
-                        <h1>Jouw merk op de voorgrond</h1>
+                        <p>sun.leung@hva.nl</p>
                     </div>
                 </div>
-                <p>Iedereen die (online) gevonden wilt kunnen worden heeft een website nodig.</p>
-            </div>
-            <div class="main-right">
-                <img class="profile_picture">
-                <p>S.T. Leung</p>
-            </div>
-        </div>
-        <div class="footer-bar">
-            <div class="email">
-                <div class="icon-box">
-                    <img src="">
-                    <p>sun.leung@hva.nl</p>
-                </div>
-            </div>
-            <div class="phone">
-                <div class="icon-box">
-                    <img src="">
-                    <p>06 1234 5678</p>
+                <div class="phone">
+                    <div class="icon-box">
+                        <img src="">
+                        <p>06 1234 5678</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<style>
-    .kaartje-wrapper {
-        max-width: 800px;
-        width: 100%;
-        margin: 0 auto;
-        background-color: #FFFDF4;
-        border-radius: 10px;
-    }
-
-    .top-bar {
-        border-radius: 10px 10px 0 0;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .top-bar ul {
-        list-style-type: none;
-        padding: unset;
-        display: flex;
-    }
-
-    .top-bar li:not(:last-child):after {
-        content: '-';
-        margin: 0 10px;
-    }
-
-    .top-bar, .footer-bar {
-        background-color: black;
-        padding: 10px 30px;
-    }
-
-    :is(.top-bar, .footer-bar) :is(li, p) {
-        color: white;
-    }
-
-    .main-section {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        padding: 0 30px;
-    }
-
-    .footer-bar {
-        border-radius: 0 0 10px 10px;
-    }
-</style>
+    </section>
+</body>
+</html>

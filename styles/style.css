@@ -1,0 +1,44 @@
+        .kaartje-wrapper {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #FFFDF4;
+            border-radius: 10px;
+        }
+
+        .top-bar {
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .top-bar ul {
+            list-style-type: none;
+            padding: unset;
+            display: flex;
+        }
+
+        .top-bar li:not(:last-child):after {
+            content: '-';
+            margin: 0 10px;
+        }
+
+        .top-bar,
+        .footer-bar {
+            background-color: black;
+            padding: 10px 30px;
+        }
+
+        :is(.top-bar, .footer-bar) :is(li, p) {
+            color: white;
+        }
+
+        .main-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            padding: 0 30px;
+        }
+
+        .footer-bar {
+            border-radius: 0 0 10px 10px;
+        }
