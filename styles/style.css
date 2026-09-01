@@ -133,7 +133,7 @@ section {
 
 .sub-main-section {
     max-height: 0px;
-    transition: .3s ease;
+    transition: .3s ease-out 0s;
     transition-delay: .3s;
 }
 
@@ -154,7 +154,7 @@ section {
     width: 54px;
     transform: translatey(100%);
     opacity: 0;
-    transition: .3s ease;
+    transition: .3s ease-out 0s;
     transition-delay: .5s;
 }
 
