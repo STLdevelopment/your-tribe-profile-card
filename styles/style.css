@@ -1,10 +1,13 @@
 body {
   font-family: "Inter", sans-serif;
+  text-wrap: pretty;
+  line-height: 1.6em;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Fjalla One", sans-serif;
   font-weight: 500;
+  text-wrap: balance;
 }
 
 .kaartje-wrapper {
@@ -14,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #FFFDF4;
     border-radius: 10px;
     position: relative;
+    box-shadow: 0px 10px 30px #00000010;
 }
 
 .kaartje-wrapper:before {
