@@ -25,11 +25,14 @@ section {
     border-radius: 10px;
     position: relative;
     box-shadow: 0px 10px 30px #00000010;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: .3s ease;
 }
 
 .kaartje-wrapper:hover {
-    transform: translate(-4px, -4px);
+    height: 100%;
 }
 
 .kaartje-wrapper:before {
@@ -99,6 +102,18 @@ section {
 
 .main-section .main-left p {
     margin: unset;
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 3; 
+   -webkit-box-orient: vertical;
+}
+
+.kaartje-wrapper:hover .main-section .main-left p {
+   overflow: visible;
+   display: -webkit-box;
+   -webkit-line-clamp: unset; /* number of lines to show */
+           line-clamp: unset; 
 }
 
 .main-section .main-right {
