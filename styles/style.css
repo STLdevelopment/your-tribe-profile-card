@@ -132,9 +132,6 @@ section {
 }
 
 .sub-main-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
     max-height: 0px;
     transition: .3s ease;
     transition-delay: .3s;
@@ -143,6 +140,13 @@ section {
 .kaartje-wrapper:hover .sub-main-section {
     max-height: unset;
     padding: 0 30px 30px 30px;
+}
+
+.sub-main-section-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    overflow: hidden;
 }
 
 .sub-main-section svg {
