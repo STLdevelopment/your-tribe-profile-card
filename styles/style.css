@@ -104,6 +104,7 @@ section {
 .main-section .main-left p {
     margin: unset;
     position: relative;
+    overflow: hidden;
 }
 
 .main-section .main-left p:before {
@@ -116,6 +117,7 @@ section {
     background-image: linear-gradient(to bottom, #FFFFFF00 0%, #FFFDF4 50%);
     transform: translatey(0%);
     transition: .3s ease;
+    transition-delay: .3s;
 }
 
 .kaartje-wrapper:hover .main-left p:before {
