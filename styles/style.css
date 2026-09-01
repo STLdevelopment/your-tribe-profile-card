@@ -19,6 +19,7 @@ section {
 
 .kaartje-wrapper {
     max-width: 800px;
+    min-height: 0px;
     width: 100%;
     margin: 0 auto;
     background-color: #FFFDF4;
@@ -32,7 +33,7 @@ section {
 }
 
 .kaartje-wrapper:hover {
-    height: 100%;
+    min-height: 100%;
 }
 
 .kaartje-wrapper:before {
@@ -102,18 +103,23 @@ section {
 
 .main-section .main-left p {
     margin: unset;
-   overflow: hidden;
-   display: -webkit-box;
-   -webkit-line-clamp: 3; /* number of lines to show */
-           line-clamp: 3; 
-   -webkit-box-orient: vertical;
+    position: relative;
 }
 
-.kaartje-wrapper:hover .main-section .main-left p {
-   overflow: visible;
-   display: -webkit-box;
-   -webkit-line-clamp: unset; /* number of lines to show */
-           line-clamp: unset; 
+.main-section .main-left p:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, #FFFFFF00, #FFFDF4);
+    transform: translatey(0%);
+    transition: .3s ease;
+}
+
+.kaartje-wrapper:hover .main-left p:before {
+    transform: translatey(-100%);
 }
 
 .main-section .main-right {
