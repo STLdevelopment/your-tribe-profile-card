@@ -83,6 +83,7 @@ section {
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 50px;
     padding: 30px;
+    flex-grow: 2;
 }
 
 .main-section .main-left {
