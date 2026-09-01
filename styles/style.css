@@ -113,13 +113,13 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, #FFFFFF00, #FFFDF4);
+    background-image: linear-gradient(to bottom, #FFFFFF00 0%, #FFFDF4 50%);
     transform: translatey(0%);
     transition: .3s ease;
 }
 
 .kaartje-wrapper:hover .main-left p:before {
-    transform: translatey(-100%);
+    transform: translatey(100%);
 }
 
 .main-section .main-right {
