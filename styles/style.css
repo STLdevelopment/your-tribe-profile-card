@@ -131,6 +131,19 @@ section {
     align-items: end;
 }
 
+.sub-main-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-height: 0px;
+    transition: .3s ease;
+    transition-delay: .3s;
+}
+
+.kaartje-wrapper:hover .sub-main-section {
+    max-height: auto;
+}
+
 .footer-bar {
     display: flex;
     justify-content: space-between;
