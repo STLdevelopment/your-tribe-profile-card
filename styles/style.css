@@ -4,6 +4,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Fjalla One", sans-serif;
+  font-weight: 500;
 }
 
 .kaartje-wrapper {
@@ -25,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(STLdevelopment/assets/Logo_placeholder.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    pointer-events: none;
 }
 
 .top-bar {
@@ -109,4 +111,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-bar p {
     margin: unset;
+}
+
+.footer-bar svg {
+    width: 20px;
+    height: 20px;
 }
