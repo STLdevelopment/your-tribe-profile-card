@@ -146,8 +146,8 @@ section {
 }
 
 .sub-main-section svg {
-    height: 24px;
-    width: 24px;
+    height: 54px;
+    width: 54px;
     transform: translatey(100%);
     opacity: 0;
     transition: .3s ease;
@@ -156,6 +156,7 @@ section {
 
 .kaartje-wrapper:hover .sub-main-section svg {
     opacity: 1;
+    transform: translatey(0%);
 }
 
 .kaartje-wrapper:hover .sub-main-section svg:nth-child(2) {
