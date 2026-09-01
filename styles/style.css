@@ -1,0 +1,112 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.kaartje-wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FFFDF4;
+    border-radius: 10px;
+    position: relative;
+}
+
+.kaartje-wrapper:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(STLdevelopment/assets/Logo_placeholder.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.top-bar {
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 30px;
+    background-color: black;
+}
+
+.top-bar svg {
+    height: 26px;
+}
+
+.top-bar ul {
+    list-style-type: none;
+    padding: unset;
+    display: flex;
+    margin: unset;
+}
+
+.top-bar li:not(:last-child):after {
+    content: '-';
+    margin: 0 10px;
+}
+
+:is(.top-bar, .footer-bar) :is(li, p) {
+    color: white;
+}
+
+.main-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 50px;
+    padding: 30px;
+}
+
+.main-section .main-left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main-section .main-left .hero-container .icon-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.main-section .main-left .hero-container h1 {
+    margin: unset;
+}
+
+.main-section .main-left p {
+    margin: unset;
+}
+
+.main-section .main-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.footer-bar {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+    padding: 16px 30px;
+    background-color: black;
+}
+
+.footer-bar :is(.email, .phone) {
+    max-width: fit-content;
+}
+
+.footer-bar .icon-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footer-bar p {
+    margin: unset;
+}
