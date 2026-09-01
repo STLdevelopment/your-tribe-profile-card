@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-    height: 100vh;
+    height: calc(100vh - 100px);
     display: flex;
     align-items: center;
     padding: 50px;
