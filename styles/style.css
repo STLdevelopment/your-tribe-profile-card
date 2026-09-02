@@ -127,7 +127,7 @@ section {
     mask: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 50%);
 }
 
-.kaartje-wrapper:hover .main-left p:before {
+.kaartje-wrapper:hover .main-left p {
     mask: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 0%);
 }
 
