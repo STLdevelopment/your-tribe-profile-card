@@ -159,6 +159,7 @@ section {
 .kaartje-wrapper:hover .sub-main-section {
     max-height: unset;
     padding: 30px
+}
 
 .sub-main-section-container {
     display: flex;
