@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
+a {
+    color: #FFD700;
+}
+
 section {
     height: calc(100vh - 100px);
     display: flex;
@@ -162,7 +166,6 @@ section {
 }
 
 .sub-main-section svg {
-    height: 54px;
     width: 54px;
     transform: translatey(100%);
     opacity: 0;
