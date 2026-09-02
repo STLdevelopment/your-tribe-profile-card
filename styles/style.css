@@ -147,6 +147,7 @@ section {
     max-height: 0px;
     transition: .3s ease-out 0s;
     transition-delay: .3s, 0s;
+    border-top: 1px solid black;
 }
 
 .kaartje-wrapper:hover .sub-main-section {
@@ -159,7 +160,6 @@ section {
     justify-content: space-between;
     gap: 30px;
     overflow: hidden;
-    border-top: 1px solid black;
 }
 
 .sub-main-section svg {
