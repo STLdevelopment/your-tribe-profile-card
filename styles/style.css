@@ -49,6 +49,22 @@ section {
     pointer-events: none;
 }
 
+.kaartje-wrapper:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #FFFFFF40;
+    clip-path: polygon(15% 0, 100% 100%, 35% 0, 61% 0, 100% 85%, 100% 100%, 85% 100%, 0 14%, 0 0);
+    pointer-events: none;
+}
+
+.kaartje-wrapper > * {
+    z-index: 1;
+}
+
 .top-bar {
     border-radius: 10px 10px 0 0;
     display: flex;
@@ -87,18 +103,6 @@ section {
     position: relative;
 }
 
-.main-section:before {
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #FFFFFF40;
-    clip-path: polygon(15% 0, 100% 100%, 35% 0, 61% 0, 100% 85%, 100% 100%, 85% 100%, 0 14%, 0 0);
-    pointer-events: none;
-}
-
 .main-section .main-left {
     display: flex;
     flex-direction: column;
@@ -119,23 +123,12 @@ section {
     margin: unset;
     position: relative;
     overflow: hidden;
-}
-
-.main-section .main-left p:before {
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom, #FFFFFF00 0%, #FFD700 50%);
-    transform: translatey(0%);
-    transition: .3s ease;
-    transition-delay: .3s;
+    backdrop-filter: blur(8px);
+    mask: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 50%);
 }
 
 .kaartje-wrapper:hover .main-left p:before {
-    transform: translatey(100%);
+    mask: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 0%);
 }
 
 .main-section .main-right {
