@@ -22,7 +22,7 @@ section {
     min-height: 0px;
     width: 100%;
     margin: 0 auto;
-    background-color: #FFFDF4;
+    background-color: #FFD700;
     border-radius: 10px;
     position: relative;
     box-shadow: 0px 10px 30px #00000010;
@@ -115,7 +115,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, #FFFFFF00 0%, #FFFDF4 50%);
+    background-image: linear-gradient(to bottom, #FFFFFF00 0%, #FFD700 50%);
     transform: translatey(0%);
     transition: .3s ease;
     transition-delay: .3s;
@@ -134,7 +134,7 @@ section {
 .sub-main-section {
     max-height: 0px;
     transition: .3s ease-out 0s;
-    transition-delay: .3s;
+    transition-delay: .3s, 0s;
 }
 
 .kaartje-wrapper:hover .sub-main-section {
