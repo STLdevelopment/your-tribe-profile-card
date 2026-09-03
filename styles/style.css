@@ -279,3 +279,29 @@ main {
         opacity: 1;
     }
 }
+
+@media (max-width: 767px) {
+    .kaartje-wrapper .top-bar ul {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .kaartje-wrapper .top-bar ul li:after {
+        content: unset;
+    }
+
+    .kaartje-wrapper .sub-main-section-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .kaartje-wrapper .sub-main-section-container svg:last-child {
+        display: none;
+    }
+
+    .kaartje-wrapper .footer-bar {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
