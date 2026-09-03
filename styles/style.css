@@ -269,12 +269,12 @@ main {
         font-size: 24px;
     }
 
-    .kaartje-wrapper .main-section .sub-main-section {
+    .kaartje-wrapper .sub-main-section {
         max-height: unset;
         padding: 20px;
     }
 
-    .kaartje-wrapper .main-section .sub-main-section svg {
+    .kaartje-wrapper .sub-main-section svg {
         transform: unset;
         opacity: 1;
     }
