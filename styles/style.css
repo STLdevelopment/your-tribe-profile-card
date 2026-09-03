@@ -290,10 +290,20 @@ main {
         content: unset;
     }
 
+    .kaartje-wrapper .main-section {
+        grid-row-gap: 20px;
+        padding-bottom: 30px;
+    }
+
     .kaartje-wrapper .sub-main-section-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
+        gap: 25%;
+    }
+
+    .kaartje-wrapper .sub-main-section-container svg {
+        width: 100%;
     }
 
     .kaartje-wrapper .sub-main-section-container svg:last-child {
