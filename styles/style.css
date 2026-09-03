@@ -101,6 +101,7 @@ section {
     padding: 30px;
     flex-grow: 2;
     position: relative;
+    transition: .3s ease;
 }
 
 .kaartje-wrapper:hover .main-section {
