@@ -226,33 +226,33 @@ main {
         padding: 20px;
     }
 
-    .main-section {
+    .kaartje-wrapper .main-section {
         grid-template-columns: 1fr;
         grid-row-gap: 50px;
         padding: 20px;
     }
 
-    .main-left {
+    .kaartje-wrapper .main-section .main-left {
         gap: 6px;
 
     }
 
-    .main-left svg {
+    .kaartje-wrapper .main-section .main-left svg {
         display: none;
     }
 
-    .main-left h1 {
+    .kaartje-wrapper .main-section .main-left h1 {
         font-family: "Inter", sans-serif;
         font-size: 1.3rem;
         font-weight: 700;
     }
 
-    .main-left p {
+    .kaartje-wrapper .main-section .main-left p {
         mask: unset;
 
     }
 
-    .main-right {
+    .kaartje-wrapper .main-section .main-right {
         order: -1;
         align-items: start;
         flex-direction: row;
@@ -260,21 +260,21 @@ main {
         gap: 20px;
     }
 
-    .main-right img {
+    .kaartje-wrapper .main-section .main-right img {
         max-width: 80px;
     }
 
-    .main-right p {
+    .kaartje-wrapper .main-section .main-right p {
         font-family: "Fjalla One", sans-serif;
         font-size: 24px;
     }
 
-    .sub-main-section {
+    .kaartje-wrapper .main-section .sub-main-section {
         max-height: unset;
         padding: 20px;
     }
 
-    .sub-main-section svg {
+    .kaartje-wrapper .main-section .sub-main-section svg {
         transform: unset;
         opacity: 1;
     }
