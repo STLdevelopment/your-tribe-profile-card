@@ -1,3 +1,4 @@
+/* General styling */
 body {
   font-family: "Inter", sans-serif;
   text-wrap: pretty;
@@ -14,6 +15,7 @@ a {
     color: #FFD700;
 }
 
+/* Page settings */
 main {
     height: calc(100vh - 100px);
     display: flex;
@@ -23,6 +25,7 @@ main {
     padding: 50px;
 }
 
+/* Wrapper parent styling */
 .kaartje-wrapper {
     max-width: 800px;
     min-height: 0px;
@@ -38,19 +41,6 @@ main {
     transition: .3s ease;
 }
 
-.kaartje-wrapper:before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-image: url(STLdevelopment/assets/Logo_placeholder.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    pointer-events: none;
-}
-
 .kaartje-wrapper:after {
     content: '';
     height: 100%;
@@ -63,10 +53,12 @@ main {
     pointer-events: none;
 }
 
+/* All content layered above the :after mask shape */
 .kaartje-wrapper > * {
     z-index: 1;
 }
 
+/* Black top bar styling */
 .top-bar {
     border-radius: 10px 10px 0 0;
     display: flex;
@@ -96,6 +88,7 @@ main {
     color: white;
 }
 
+/* Main gold section styling */
 .main-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -150,6 +143,7 @@ main {
     box-shadow: 0px 0px 30px #FFFFFF90;
 }
 
+/* Main gold section hidden content before hover-state */
 .sub-main-section {
     max-height: 0px;
     transition: .3s ease-out 0s;
@@ -196,6 +190,7 @@ main {
     transition-delay: .65s;
 }
 
+/* Black footer at the bottom of the card */
 .footer-bar {
     display: flex;
     justify-content: space-between;
@@ -223,6 +218,7 @@ main {
     height: 20px;
 }
 
+/* Tablet responsive */
 @media (max-width: 1024px) {
     main {
         padding: 20px;
@@ -282,6 +278,7 @@ main {
     }
 }
 
+/* Mobile responsive */
 @media (max-width: 767px) {
     .kaartje-wrapper .top-bar ul {
         flex-direction: column;
